@@ -1,0 +1,26 @@
+{
+  "name": "wikipedia-example-tests",
+  "version": "1.0.0",
+  "description": "Some example tests on wikipedia website",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:opem": "cypress open",
+    "cy:run": "cypress run --headless --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nurmizmat/wikipedia-example-tests.git"
+  },
+  "keywords": [
+    "QA",
+    "AQA",
+    "Cypress"
+  ],
+  "author": "nurmizmat",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^12.17.3",
+    "dotenv": "^16.3.1"
+  }
+}
