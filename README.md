@@ -38,13 +38,13 @@ npm run cy:run
 
 ## Additional information
 
-1) Integration with faker.js
+1) Integration with faker.js.  
 My tests make use of the faker.js library, which helps in generating massive amounts of realistic fake data. This ensures our tests have variability and mimic real-world use cases, enhancing the robustness of our test cases.
 
-2) Using dotenv for Environment Variables
+2) Using dotenv for Environment Variables.  
 I utilize the dotenv package to manage environment variables. Locally, these variables are read from the .env file. When our tests run on GitHub CI, these values are pulled from GitHub's secret environment variables. This practice ensures the security of sensitive information while providing flexibility in different environments.
 
-3) External API for Text Extraction from Images
+3) External API for Text Extraction from Images.  
 To simulate the account creation process on Wikipedia, I occasionally encounter captchas. To automate this part, I employ an external API that extracts text from images. This helps in automating the process of reading and inputting captcha values during our test runs.
 
 It's essential to be cautious when working with captchas in an automated testing environment. Wikipedia and other platforms use captchas to prevent bot activity, so excessive use of this approach might lead to IP bans or other restrictive actions. Always ensure that you're respectful of platform limits and terms of service.

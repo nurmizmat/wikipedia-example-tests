@@ -4,7 +4,7 @@
   "description": "Some example tests on wikipedia website",
   "main": "cypress.config.js",
   "scripts": {
-    "cy:opem": "cypress open",
+    "cy:open": "cypress open",
     "cy:run": "cypress run --headless --browser chrome"
   },
   "repository": {
